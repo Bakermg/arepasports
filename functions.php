@@ -47,17 +47,17 @@ function arepasports_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Top', 'arepasports' ),
+		'menu-1' => esc_html__( 'Header', 'arepasports' ),
 	) );
 
 	/**
 	 * Add support for core custom logo.
 	 */
 	add_theme_support( 'custom-logo', array(
-		'height'      => 200,
-		'width'       => 200,
+		'height'      => 60,
+		'width'       => 60,
 		'flex-width'  => true,
-		'flex-height' => true,
+		// 'flex-height' => true,
 	) );
 
 	/*

@@ -26,7 +26,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-		<?php if ( get_header_image() ) : ?>
+		<?php if ( get_header_image() && is_front_page()) : ?>
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 			<img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
 			</a>
@@ -34,11 +34,10 @@
 
 		<?php get_template_part( 'components/header/header', 'image' ); ?>
 
-		<?php arepasports_the_custom_logo(); ?>
 
 		<?php get_template_part( 'components/navigation/navigation', 'top' ); ?>
 
-		<?php arepasports_social_menu(); ?>
+
 
 	</header>
 	<div id="content" class="site-content">

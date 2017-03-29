@@ -13,7 +13,9 @@
 
 	</div>
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<?php get_template_part( 'components/footer/site', 'info' ); ?>
+		<div class="social-icon-menu">
+			<?php arepasports_social_menu(); ?>
+			</div>
 	</footer>
 </div>
 <?php wp_footer(); ?>

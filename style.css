@@ -600,7 +600,7 @@ table {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
+  float: right;
   width: 100%;
 }
 .main-navigation ul {
@@ -640,10 +640,10 @@ table {
   color: #999;
 }
 .main-navigation li {
-  float: left;
+  float: right;
   position: relative;
-  margin: .5em;
-  font-size: 1.1em;
+  margin: .9em;
+  font-size: 1.2em;
 }
 .main-navigation a {
   display: block;
@@ -695,6 +695,16 @@ table {
   width: 50%;
 }
 
+.social-icon-menu {
+  font-size: 3.2em;
+}
+.jetpack-social-navigation .jetpack-social-navigation ul {
+    display: block;
+    margin: 0;
+}
+.menu-social-container ul li{
+  padding: 1em .2em 0 0;
+}
 /*--------------------------------------------------------------
 # Links
 --------------------------------------------------------------*/
@@ -750,6 +760,13 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
+}
+.content-area {
+  background: #fff;
+}
+.site-footer {
+  background: #E42A48;
+  text-align: center;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -864,11 +881,25 @@ body {
 # Header
 --------------------------------------------------------------*/
 .site-header {
-  background: #000;
+  background: #E42A48;
+  }
+.custom-logo-link img {
+  display: block;
+  height: 65px;
+  width: auto;
+  padding: 10px;
 }
 
-
 .site-branding {
+  // display: flex;
+  // min-height: 65px;
+  // flex: 1 0  auto;
+}
+.site-branding_text {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // height: 65px;
   text-align: center;
 }
 
@@ -929,9 +960,13 @@ body {
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */
+  text-align: center;
 }
 .widget select {
   max-width: 100%;
+}
+.widget-area {
+  color: #000;
 }
 
 /*--------------------------------------------------------------
